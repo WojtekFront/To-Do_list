@@ -54,22 +54,22 @@
   <form>
     {{-- <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> --}}
     <h1 class="h3 mb-3 fw-normal">
-    PCreate your account:</h1>
+    Create your account:</h1>
 
      <div class="form-floating">
-      <input type="text" class="form-control" id="floatingInput" placeholder="Enter name">
+      <input name="name" type="text" class="form-control" id="floatingInput" placeholder="Enter name">
       <label for="floatingInput">
       Full name</label>
     </div>
 
 
     <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
       <label for="floatingInput">
       Email address</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
       <label for="floatingPassword">
       Password</label>
     </div>

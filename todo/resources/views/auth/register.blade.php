@@ -83,8 +83,14 @@
         <span class="text-danger">{{ $message }}</span>
       @enderror
     </div>
-
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button>
+    @if(session()->has("success"))
+      <div class="alert alert-success">
+        {{session()->get("success")}}
+      </div>
+    @endif
+    <button class="w-100 btn btn-lg btn-primary" type="submit">
+      Register
+    </button>
     <p class="mt-5 mb-3 text-muted">© 2025</p>
   </form>
 </main>

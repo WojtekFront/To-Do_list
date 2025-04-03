@@ -49,7 +49,8 @@
 @section("content")
 
 <main class="form-signin">
-  <form>
+  <form method="POST" action="{{route("login.post")}}">
+  @csrf
     {{-- <img class="mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> --}}
     <h1 class="h3 mb-3 fw-normal">
     Please sign in</h1>
@@ -64,6 +65,11 @@
       <label for="floatingPassword">
       Password</label>
     </div>
+    
+    @error('login')
+      <span class="text-danger">{{$message}}</span>
+    @enderror
+
 
     <div class="checkbox mb-3">
       <label>
